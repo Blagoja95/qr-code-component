@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+   background-color: var(--light-gray);
+}
+
+.component{
+    width: 32rem;
+    height: 49.5rem;
+    background-color: var(--white);
+    border-radius: 1.5rem;
+}
+
+.component-wrapper{
+    margin: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+} 
+
+.qr-img{
+    height: 29rem;
+    border-radius: 1.5rem;
+}
+
+.component-msg{
+
+}
+
+.text-box-wrapper{
+    margin: 0 1.6rem 1.6rem 1.6rem;
+    text-align: center;
+}
+.component-title{
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+}
+.component-msg{
+    color: var(--grayish-blue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 400px) {
+
+    html{
+        font-size: 56.25%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    html{
+        font-size: 50%;
+    }
+}
